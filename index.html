@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+     <script type="text/javascript" src="home.js"></script>
+   <title>Page Title Goes Here</title>
+   <meta charset="utf-8">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navigation-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand active" href="index.html">#urt</a>
+      </div>
+      <!--collect the nav links forms and other content for toggling-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="tennis.html">Tennis</a></li>
+          <li><a href="visage.html">Visage</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+  <div class="tablet-screen">
+        <div class="mySlides w3-animate-zoom">
+          <div class="goes-to  w3-animate-zoom">
+            <h2>
+              <a href="visage.html">Visage</a>
+            </h2>
+          </div>
+              <img src="resize-h/44.jpg" alt="pic">
+        </div>
+
+        <div class="mySlides w3-animate-right">
+          <div class="goes-to w3-animate-zoom">
+            <h2>
+              <a href="tennis.html">Tennis</a>
+            </h2>
+          </div>
+            <img src="resize-h/2.jpg" alt="pic">
+          </div>
+
+        <div class="mySlides w3-animate-right">
+          <div class="goes-to w3-animate-zoom">
+            <h2>
+              <a href="visage.html">Visage</a>
+            </h2>
+          </div>
+            <img src="resize-h/16.jpg" alt="pic">
+        </div>
+
+        <div class="mySlides w3-animate-right">
+          <div class="goes-to w3-animate-zoom">
+            <h2>
+              <a href="tennis.html">Tennis</a>
+            </h2>
+          </div>
+            <img src="resize-h/12.jpg" alt="pic">
+        </div>
+
+        <div class="mySlides w3-animate-right">
+          <div class="goes-to w3-animate-zoom">
+            <h2>
+              <a href="visage.html">Visage</a>
+            </h2>
+          </div>
+            <img src="resize-h/40.jpg" alt="pic">
+        </div>
+
+        <div class="mySlides w3-animate-right">
+          <div class="goes-to w3-animate-zoom">
+            <h2>
+              <a href="tennis.html">Tennis</a>
+            </h2>
+          </div>
+            <img src="resize-h/26.jpg" alt="pic">
+        </div>
+
+        <div class="mySlides w3-animate-right">
+          <div class="goes-to w3-animate-zoom">
+            <h2>
+              <a href="visage.html">Visage</a>
+            </h2>
+          </div>
+            <img src="resize-h/23.jpg" alt="pic">
+        </div>
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+<div class="scene">
+  <div class="page page-1 active">
+    <div class="half left"></div>
+    <div class="half right withText">
+      <h2 class="heading"><a href="tennis.html">Tennis</a></h2>
+    </div>
+  </div>
+  <div class="page page-2">
+    <div class="half left withText">
+      <h2 class="heading"><a href="tennis.html">Court</a></h2>
+    </div>
+    <div class="half right"></div>
+  </div>
+  <div class="page page-3">
+    <div class="half left"></div>
+    <div class="half right withText">
+      <h2 class="heading"><a href="tennis.html">Visage</a></h2>
+    </div>
+  </div>
+  <div class="page page-4">
+    <div class="half left withText">
+      <h2 class="heading"><a href="tennis.html">Fashion</a></h2>
+    </div>
+    <div class="half right"></div>
+  </div>
+</div>
+<div class="nav-panel">
+  <div class="scroll-btn up"></div>
+  <div class="scroll-btn down"></div>
+  <nav>
+    <ul>
+      <li data-target="1" class="nav-btn nav-page1 active"></li>
+      <li data-target="2" class="nav-btn nav-page2"></li>
+      <li data-target="3" class="nav-btn nav-page3"></li>
+      <li data-target="4" class="nav-btn nav-page4"></li>
+    </ul>
+  </nav>
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n){
+  var i;
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length}
+for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
+}
+
+</script>
+</body>
+</html>
